@@ -22,7 +22,7 @@ export interface ChatMessage {
 }
 
 export interface GeneratedDocs {
-    techspec: string;
+    prd: string;
     plan: string;
     gemini: string;
 }

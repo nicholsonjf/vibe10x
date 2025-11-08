@@ -1,4 +1,4 @@
-# Vibe PRD Generator
+# Vibe10x
 
 This project is an AI-powered self-service platform that transforms natural conversations into senior engineer-level Product Requirements Documents (PRDs), `plan.md` files, and agent instruction files, optimized for AI coding agents like Cursor, Gemini CLI, etc.
 
@@ -65,7 +65,7 @@ The user is guided through a three-step process to generate their documentation:
 3.  **Step 3: Document Generation & Review (`Step3_Documents.tsx`)**
     -   Once the user finishes the conversation, the entire chat history and initial project details are sent back to the Gemini API.
     -   A second, different prompt instructs the model to act as a Principal Engineer and generate three distinct markdown files by returning a structured JSON object.
-    -   The generated `techspec.md`, `plan.md`, and `gemini.md` files are displayed in a tabbed view for review.
+    -   The generated `prd.md`, `plan.md`, and `gemini.md` files are displayed in a tabbed view for review.
     -   The user can download all three files as a single `.zip` package using the JSZip library.
 
 ## Getting Started
