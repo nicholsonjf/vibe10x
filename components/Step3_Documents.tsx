@@ -23,12 +23,12 @@ interface Step3DocumentsProps {
 type DocKey = keyof GeneratedDocs;
 
 const Step3Documents: React.FC<Step3DocumentsProps> = ({ docs, onRestart }) => {
-  const [activeTab, setActiveTab] = useState<DocKey>('techspec');
+  const [activeTab, setActiveTab] = useState<DocKey>('prd');
 
   const handleDownload = () => {
     // @ts-ignore - JSZip is loaded from CDN
     const zip = new JSZip();
-    zip.file("techspec.md", docs.techspec);
+    zip.file("prd.md", docs.prd);
     zip.file("plan.md", docs.plan);
     zip.file("gemini.md", docs.gemini);
     zip.generateAsync({ type: "blob" }).then(function(content) {
@@ -42,7 +42,7 @@ const Step3Documents: React.FC<Step3DocumentsProps> = ({ docs, onRestart }) => {
   };
 
   const tabs: { key: DocKey; label: string }[] = [
-    { key: 'techspec', label: 'techspec.md' },
+    { key: 'prd', label: 'prd.md' },
     { key: 'plan', label: 'plan.md' },
     { key: 'gemini', label: 'gemini.md' },
   ];

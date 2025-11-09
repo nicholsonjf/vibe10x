@@ -92,7 +92,7 @@ const App: React.FC = () => {
           <div className="inline-flex items-center gap-3 bg-gray-800 border border-gray-700 rounded-full px-4 py-2">
             <SparklesIcon className="h-6 w-6 text-indigo-400"/>
             <h1 className="text-2xl sm:text-3xl font-bold tracking-tight bg-gradient-to-r from-purple-400 to-indigo-400 text-transparent bg-clip-text">
-              Vibe PRD Generator
+              Vibe10x
             </h1>
           </div>
         <p className="mt-4 text-lg text-gray-300 max-w-2xl mx-auto">
